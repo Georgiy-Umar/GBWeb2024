@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>
+    <script language = "JavaScript">
+        //Задача 1:
+        // Напишите функцию, которая запрашивает ввод любимого кино и 
+        //если ввод не верен,то программа отправляет запрос "Попробуйте еще!"
+
+        // var film = prompt('Enter your favorite cinema')
+        // if(film == 'Long') {
+        //     alert('Yes, it is good cinema!')
+        //  } else if (film == 'Min'){
+        //     alert('This is cool cinema too!')
+        //  } else {
+        //     alert ('Error! Sorry, Тry later!')
+        // }
+
+            // Задача 2:
+            //Сделайте массив с произвольными элементами, и вывести в документе данные из массива, 
+            //и отсортировать в обратном порядке
+
+            var inputNumbers = prompt('Заполните числовой массив произвольными целыми числами через запятую от 0 до 9:')
+            var MyArr = inputNumbers.split(',').map(function(item){
+                return parseInt(item,10)
+            })
+            console.log('Введенный массив:', MyArr);
+
+            MyArr.sort(function(a,b){
+                return b - a;
+            })
+            console.log('Вывод отсортированного массива:', MyArr);
+
+    </script>
+
+</p>
+    
+</body>
+</html>
